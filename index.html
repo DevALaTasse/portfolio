@@ -9,17 +9,22 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <script src="javascript/main.js" defer></script>
+    <!-- Police1 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <!-- Police2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
-<body class="font1">
+<body class="font2">
 
 <header>
     <nav class="nav-container">
-        <h1>Devergnes Christopher</h1>
+        <h1 class="font1">{{ Christopher.Devergnes }}</h1>
         <ul class="nav-menu">
-            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="index.html">Accueil</a></li>
             <li><a href="about.html">A propos</a></li>
             <li><a href="project.html">Projets</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -28,13 +33,19 @@
 </header>
 
 <main>
-    <section>
-        <p class="font3">Bonjour<span class="welcome-point">.</span></p>
-        <span class="horizontal-line"></span><span class=" font2">Bienvenue</span>
-        <h2>Développeur Web</h2>
+    <div class="conteneur-flexible">
+    <section class="element-flexible">
+        <p class="font3">Bonjour <span class="welcome-point">.</span></p>
+        <span class="horizontal-line"></span><span class="font2">Bienvenue</span>
+        <h2 class="font5">Développeur Web</h2><br>
         <a href="#" class="nav-btn-1">Vous avez un projet ?</a>
         <a href="#" class="nav-btn-2">Présentation</a>
     </section>
+
+    <section class="element-flexible">
+
+    </section>
+    </div>
 
     <section class="skill">
         <span>Html</span>
@@ -68,9 +79,9 @@
             <h2>A propos de moi</h2>
             <p>Yé soui un cowboy du code</p>
             <div>
-                <strong  class="counter" data-target="102">102 <span class="about-figures">+</span></strong><p>Projets réaliser</p>
-                <strong>95 <span class="about-figures">%</span></strong><p>Satisfaction</p>
-                <strong>10 <span class="about-figures">+</span></strong><p>Années d'experiences</p>
+                <strong class="counter" data-target="3"></strong><span class="about-figures"> +</span><p>Projets réaliser</p>
+                <strong class="counter" data-target="95"></strong><span class="about-figures">%</span><p>Satisfaction</p>
+                <strong class="counter" data-target="5"></strong><span class="about-figures">+</span><p>Années d'experiences</p>
             </div>
         </div>
     </section>

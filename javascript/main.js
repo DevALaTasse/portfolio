@@ -1,41 +1,38 @@
-// Project counter function
-const counter = document.querySelector(".counter");
-const target = +counter.dataset.target;
+// Projects figure 
+const counters = document.querySelectorAll(".counter");
 
-let hasAnimated = false;
+counters.forEach(counter => {
+  const target = +counter.dataset.target;
+  let hasAnimated = false;
 
-// Controlled recursion function
-const countUp = () => {
-  let current = 0;
-  const increment = target / 50; // vitesse
+  const countUp = () => {
+    let current = 0;
+    const increment = target / 50;
 
-  const updateCounter = () => {
-    current += increment;
+    const updateCounter = () => {
+      current += increment;
+      if (current < target) {
+        counter.textContent = Math.floor(current);
+        requestAnimationFrame(updateCounter);
+      } else {
+        counter.textContent = target;
+      }
+    };
 
-    if (current < target) {
-      counter.textContent = Math.floor(current);
-      requestAnimationFrame(updateCounter);
-    } else {
-      counter.textContent = target;
-    }
+    updateCounter();
   };
 
-  updateCounter();
-};
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          hasAnimated = true;
+          countUp();
+        }
+      });
+    },
+    { threshold: 0.6 }
+  );
 
-// Observe to detect the scroll
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting && !hasAnimated) {
-        hasAnimated = true;
-        countUp();
-      }
-    });
-  },
-  {
-    threshold: 0.6,
-  }
-);
-
-observer.observe(counter);
+  observer.observe(counter);
+});
