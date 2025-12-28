@@ -1,0 +1,123 @@
+/* =============== Font =============== */
+/* https://fonts.google.com/selection/embed */
+
+.font1 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.font2 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.font3 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+/* =============== Nav/Header section =============== */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px 
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px 20px;
+  gap: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none; 
+}
+
+.welcome-point {
+  color: orange;
+  font-size: 1.5em; /* plus gros que le texte */
+  font-weight: bold; /* optionnel */
+}
+
+.horizontal-line {
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background: orange;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.nav-btn-1 {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: orange;
+  border: 2px solid orange ;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.7s ease;
+}
+
+
+.nav-btn-1:hover {
+  background-color: transparent;
+  border: 2px solid orange ;
+  color: orange;
+}
+
+.nav-btn-2 {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 2px solid orange ;
+  color: orange;
+  text-decoration: none;
+  transition: background-color 0.7s ease;
+}
+
+
+.nav-btn-2:hover {
+  background-color: orange;
+  color: white;
+}
+
+/* =============== Skill section =============== */
+.skill {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  gap: 20px;
+  background-color: #1c1c1c;
+  color: #464646;
+}
+
+/* =============== About section =============== */
+.vertical-line {
+  display: inline-block;
+  width: 2px;
+  height: 40px;
+  background: orange;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.space-vertical-ligne {
+  margin-left: 2px;
+  margin-top: 6px;
+}
+
+.about-figures {
+  color: orange;
+  font-size: 1.2em;
+  font-weight: bold;
+}
