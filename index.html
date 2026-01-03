@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Devergnes Christopher</title>
-    <meta name="description" content="L'univers minimaliste du developpement web selon cosybyte"/>
-    <!-- Google code to request a site once it's online <meta name="google-site-verification" content="" /> -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-    <script src="javascript/main.js" defer></script>
-    <!-- Police1 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <!-- Police2 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Devergnes.Christopher</title>
+  <meta name="description" content="L'univers minimaliste du developpement web selon cosybyte" />
+  <!-- Google code to request a site once it's online <meta name="google-site-verification" content="" /> -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <script src="javascript/main.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Raleway:ital@0;1&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="font2">
 
-<header>
+<body class="cormorant-garamond">
+
+  <header>
     <nav class="nav-container">
-        <h1 class="font1">{{ Christopher.Devergnes }}</h1>
-        <ul class="nav-menu">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="about.html">A propos</a></li>
-            <li><a href="project.html">Projets</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <h1 class="cormorant-garamond1">{{ Devergnes.Christopher }}</h1>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-a">Accueil</a></li>
+        <li><a href="about.html" class="nav-a">A propos</a></li>
+        <li><a href="project.html" class="nav-a">Projets</a></li>
+        <li><a href="contact.html" class="nav-a">Contact</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-<main>
-    <div class="conteneur-flexible">
-    <section class="element-flexible">
-        <p class="font3">Bonjour <span class="welcome-point">.</span></p>
-        <span class="horizontal-line"></span><span class="font2">Bienvenue</span>
-        <h2 class="font5">Développeur Web</h2><br>
-        <a href="#" class="nav-btn-1">Vous avez un projet ?</a>
-        <a href="#" class="nav-btn-2">Présentation</a>
-    </section>
+  <main>
+    <div class="containeur-flexible">
+      <section class="element-flexible">
+        <div class="align-font">
+          <p class="cormorant-garamond">Bonjour <span class="welcome-point">.</span></p>
+          <span class="horizontal-line"></span><span class="tangerine-bold">Bienvenue</span>
+          <h2>
+            <span class="cormorant-garamond4">
+              <strong class="rafter"><</strong>
+              <span>Developpeur Web </span>
+              <strong class="rafter">/></strong>
+            </span>
 
-    <section class="element-flexible">
+            <pre class="comment raleway-regular">
+             // Développeur web autodidacte, passionné par la création 
+             et l’amélioration de sites web.
+            </pre>
 
-    </section>
+          </h2><br>
+          <a href="#" class="nav-btn-1 font4-1">Vous avez un projet ?</a>
+          <a href="#" class="nav-btn-2 font4-1">Présentation</a>
+        </div>
+      </section>
+
+      <section class="element-flexible">
+        <img src="" alt="Image1">
+      </section>
     </div>
 
-    <section class="skill">
+    <div class="wrapper">
+      <img src="img/left.png" class="gauche img-wrapper">
+      <div class="none">
         <span>Html</span>
         <span>Css</span>
         <span>Javascript</span>
@@ -55,51 +69,55 @@
         <span>Php</span>
         <span>Sql</span>
         <span>Github</span>
+      </div>
+      <img src="img/right.png" class="droite img-wrapper">
+    </div>
+
+    <section class="containeur-flexible">
+      <div class="element-flexible">
+        <div class="space-vertical-ligne">
+          <span class="vertical-line"></span>
+          <img src="img/computeur.png" class="img-skill">
+          <span>Concepteur de sites web</span>
+        </div>
+        <span class="welcome-point">.</span>
+        <div class="space-vertical-ligne">
+          <span class="vertical-line"></span>
+          <img src="img/gestion-de-base-de-donnees.png" class="img-skill">
+          <span>Gestion de base de données</span>
+        </div>
+        <span class="welcome-point">.</span>
+        <div class="space-vertical-ligne">
+          <span class="vertical-line"></span>
+          <img src="img/plume_transparente.png" class="img-skill">
+          <span>Web design</span>
+        </div>
+      </div>
+
+      <div class="element-flexible">
+        <h2>A propos de moi</h2>
+        <p>Yé soui un cowboy du code</p>
+        <div>
+          <strong class="counter" data-target="3"></strong><span class="about-figures"> +</span>
+          <p>Projets réaliser</p>
+          <strong class="counter" data-target="95"></strong><span class="about-figures">%</span>
+          <p>Satisfaction</p>
+          <strong class="counter" data-target="5"></strong><span class="about-figures">+</span>
+          <p>Années d'experiences</p>
+        </div>
+      </div>
     </section>
 
     <section>
-        <div>
-            <div class="space-vertical-ligne">
-                <span class="vertical-line"></span>
-                <span>Concepteur de sites web</span>
-            </div>
-            <span class="welcome-point">.</span>
-            <div class="space-vertical-ligne">
-                <span class="vertical-line"></span>
-                <span>Gestion de base de données</span>
-            </div>
-            <span class="welcome-point">.</span>
-            <div class="space-vertical-ligne">
-                <span class="vertical-line"></span>
-                <span>Web design</span>
-            </div>
-        </div>
-
-        <div>
-            <h2>A propos de moi</h2>
-            <p>Yé soui un cowboy du code</p>
-            <div>
-                <strong class="counter" data-target="3"></strong><span class="about-figures"> +</span><p>Projets réaliser</p>
-                <strong class="counter" data-target="95"></strong><span class="about-figures">%</span><p>Satisfaction</p>
-                <strong class="counter" data-target="5"></strong><span class="about-figures">+</span><p>Années d'experiences</p>
-            </div>
-        </div>
+      <h3>Projets</h3>
+      <span class="vertical-line"></span>
+      <p class="welcome-point">.</p>
     </section>
+  </main>
 
-    <section>
-        <h3>Projets</h3>
-        <span class="vertical-line"></span>
-        <p class="welcome-point">.</p>
+  <footer>
 
+  </footer>
 
-
-
-    </section>
-</main>
-
-<footer>
-
-</footer>
-    
 </body>
 </html>

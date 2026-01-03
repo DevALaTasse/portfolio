@@ -36,3 +36,22 @@ counters.forEach(counter => {
 
   observer.observe(counter);
 });
+
+// =============== Lotus effect  =============== //
+const wrapper = document.querySelector('.wrapper');
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  },
+  {
+    rootMargin: "0px 0px -30% 0px",
+    threshold: 0
+  }
+);
+
+observer.observe(wrapper);
