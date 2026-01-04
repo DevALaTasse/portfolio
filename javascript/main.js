@@ -7,7 +7,7 @@ counters.forEach(counter => {
 
   const countUp = () => {
     let current = 0;
-    const increment = target / 50;
+    const increment = target / 150;
 
     const updateCounter = () => {
       current += increment;
@@ -55,3 +55,22 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(wrapper);
+
+//
+const projectSection = document.querySelector('.reveal-project');
+
+const observerProject = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  },
+  {
+    rootMargin: "0px 0px -30% 0px",
+    threshold: 0
+  }
+);
+
+observerProject.observe(projectSection);
