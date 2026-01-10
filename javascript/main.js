@@ -74,3 +74,35 @@ const observerProject = new IntersectionObserver(
 );
 
 observerProject.observe(projectSection);
+
+/* =============== Scroll effect Macbook =============== */
+window.addEventListener("scroll", () => {
+  const wrappers = document.querySelectorAll(".computer-wrapper");
+
+  wrappers.forEach(wrapper => {
+    const content = wrapper.querySelector(".screen-content");
+    const screen = wrapper.querySelector(".screen");
+
+    if (!content || !screen) return;
+
+    const rect = wrapper.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    const progress = Math.min(
+      Math.max((windowHeight - rect.top) / (windowHeight + rect.height), 0),
+      1
+    );
+
+    const maxScroll = content.scrollHeight - screen.offsetHeight;
+
+    const speed = 2;
+
+    let scrollValue = progress * maxScroll * speed;
+    scrollValue = Math.min(scrollValue, maxScroll);
+
+    content.style.transform = `translateY(-${scrollValue}px)`;
+  });
+});
+
+
+
