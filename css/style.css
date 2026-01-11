@@ -4,6 +4,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 1px;
 }
 
 .raleway-bold {
@@ -11,12 +12,14 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  letter-spacing: 1px;
 }
 
 .tangerine-regular {
   font-family: "Tangerine", cursive;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 1px;
 }
 
 .tangerine-bold {
@@ -24,6 +27,7 @@
   font-weight: 700;
   font-style: normal;
   font-size: 3.4em;
+  letter-spacing: 1px;
 }
 
 .cormorant-garamond {
@@ -31,13 +35,16 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 1px;
 }
+
 
 .cormorant-garamond1 {
   font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 1px;
   font-size: 1em;
 }
 
@@ -46,6 +53,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 1px;
   font-size: 0.9em;
 }
 
@@ -54,6 +62,7 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  letter-spacing: 1px;
 }
 
 
@@ -66,11 +75,26 @@ body {
 }
 
 /* =============== Nav/Header section =============== */
+#name span {
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(10px);
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0% 8% 0% 8%;
+  color: antiquewhite;
   background-color: rgb(128, 77, 0);
 }
 
@@ -95,7 +119,7 @@ a {
 .containeur-flexible {
   display: flex;
   padding: 0% 8% 0% 8%;
-  background-color: #d1d90936;}
+  background-color: #d9af0945;}
 
 .element-flexible{
   flex-basis: 50%;
@@ -130,9 +154,9 @@ a {
 }
 
 /* slash effect */
-.nav-a:hover {
+.nav-a:hover, .neon {
   font-weight: bold;
-  background: linear-gradient(270deg, rgb(254, 205, 45), rgb(128, 77, 0), rgb(253, 255, 209));
+  background: linear-gradient(270deg, rgb(158, 121, 66), rgb(128, 77, 0), rgba(253, 250, 230, 0.998));
   background-size: 600% 600%;
   animation: gradient 5s ease infinite;
   background-clip: text;
@@ -455,3 +479,112 @@ text-align: center;
   width: 100%;
   height: auto;
 }
+
+/* =============== Form =============== */
+.contact-section {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 60px;
+  /*text-transform: uppercase;*/
+}
+
+.contact-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-info {
+  width: 30%;
+}
+
+.info-block {
+  margin-bottom: 30px;
+}
+
+.label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.info-block p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.separator {
+  width: 1px;
+  background-color: #bdbdbd;
+  margin: 0 40px;
+  height: 360px;
+}
+
+.contact-form {
+  width: 40%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  background: transparent;
+  padding: 14px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #6e6e6e;
+}
+
+.contact-form button {
+  background-color: #b9a88f;
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+/* =============== Footer =============== */
+footer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(128, 77, 0);
+  color: antiquewhite;
+  margin-bottom: 0.5%;
+  font-size: 0.7em;
+  padding: 1% 10%;
+  height: auto;
+}
+
+.trait-footer {
+  width: 100px;
+  height: 0.5px;
+  background-color: antiquewhite;
+}
+

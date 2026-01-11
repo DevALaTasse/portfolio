@@ -1,3 +1,15 @@
+// Name Nav
+const name = document.getElementById("name");
+const text = name.textContent;
+name.textContent = "";
+
+[...text].forEach((letter, i) => {
+  const span = document.createElement("span");
+  span.textContent = letter === " " ? "\u00A0" : letter;
+  span.style.animationDelay = `${i * 0.20}s`;
+  name.appendChild(span);
+});
+
 // Projects figure 
 const counters = document.querySelectorAll(".counter");
 
@@ -95,7 +107,7 @@ window.addEventListener("scroll", () => {
 
     const maxScroll = content.scrollHeight - screen.offsetHeight;
 
-    const speed = 2;
+    const speed = 1.5;
 
     let scrollValue = progress * maxScroll * speed;
     scrollValue = Math.min(scrollValue, maxScroll);
