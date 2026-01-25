@@ -1,99 +1,19 @@
-/* =============== Font =============== */
-.raleway-regular {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 1px;
+/* De 0px à 767px → style mobile
+À partir de 768px → style tablette
+À partir de 1024px → style laptop
+À partir de 1440px → grand écran */
+
+/* =============== Tablet =============== */
+@media (min-width: 468px) {
+.wrapper.active .droite {
+  right: auto;
+  left: 90%;
+  transform: translate(-100, -50%);
+}
 }
 
-.raleway-regular2 {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 1px;
-  font-size: large;
-}
-
-.raleway-bold {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: 1px;
-}
-
-.tangerine-regular {
-  font-family: "Tangerine", cursive;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 1px;
-}
-
-.tangerine-bold {
-  font-family: "Tangerine", cursive;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 3.4em;
-  letter-spacing: 1px;
-}
-
-.cormorant-garamond {
-  font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 1px;
-}
-
-
-.cormorant-garamond1 {
-  font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 1px;
-  font-size: 1em;
-}
-
-.cormorant-garamond2 {
-  font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 1px;
-  font-size: 0.9em;
-}
-
-.cormorant-garamond4 {
-  font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: 1px;
-}
-
-
-/* =============== Body =============== */
-body {
-  background-color: #f2f2f2;
-  color: #161616;
-  font-size: 23px;
-  margin: 0%;
-}
-
-/* =============== Show section ===============*/
-section {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-section.show {
-  opacity: 1;
-  transform: translateY(0);
-}
+/* =============== Desktop =============== */
+@media (min-width: 1024px) {
 
 /* =============== Nav/Header section =============== */
 #name span {
@@ -111,17 +31,25 @@ section.show {
 }
 
 .nav-container {
+  display: flex;
   justify-content: space-between;
-  height: 3em;
-  display: grid;
-  justify-content: center;
+  align-items: center;
+  padding: 0% 8% 0% 8%;
   color: antiquewhite;
   background-color: rgb(128, 77, 0);
-  align-content: center;
 }
 
 .nav-menu {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px 20px;
+  gap: 20px;
+}
+
+.ghost {
+  display: flex;
+  height: 50%;
 }
 
 a {
@@ -135,23 +63,14 @@ a {
 }
 
 .containeur-flexible {
-  display: grid;
+  display: flex;
   padding: 0% 8% 0% 8%;
   background-color: #d9af0945;
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
-.ghost {
-  display: none;
 }
 
 .img-container-flexible {
-  background-image: url("../img/fern-10060081_1280.jpg");
-  background-size: cover;      /* couvre toute la div */
-  background-position: center; /* centrée */
-  background-repeat: no-repeat;
-  padding: 0% 8%;
+  background-image: url("../mg/fern-10060081_1280.jpg");
+  background-color: #d9af0945;
 }
 
 .element-flexible{
@@ -228,7 +147,19 @@ a {
 }
 
 .nav-btn-2 {
-display: none;
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: transparent;
+  border: 2px solid rgb(128, 77, 0);
+  color:  rgb(128, 77, 0);
+  text-decoration: none;
+  transition: background-color 0.7s ease;
+}
+
+.nav-btn-2:hover {
+  background-color: rgb(128, 77, 0);
+  border: 2px solid rgb(128, 77, 0);
+  color: white;
 }
 
 /* =============== Skill section =============== */
@@ -266,7 +197,7 @@ display: none;
 
 .wrapper.active .droite {
   right: auto;
-  left: 75%;
+  left: 90%;
   transform: translate(-100, -50%);
 }
 
@@ -277,12 +208,15 @@ display: none;
 
 }
 .wrapper.active .none {
-    opacity: 1;
-    clip-path: inset(0 0 0 0);
-    display: grid;
-    height: 10em;
-    font-size: small;
-    justify-items: center;
+  opacity: 1;
+  clip-path: inset(0 0 0 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  padding: 20px 20px;
+  gap: 5%;
+  font-size: larger;
 }
 /* ------- end lotus -------*/
 
@@ -504,7 +438,7 @@ text-align: center;
   display: grid;
   place-items: center;
   padding: 0% 10%;
-  padding-bottom: 15%;
+  margin-bottom: 15%;
 }
 
 .manuscript {
@@ -547,14 +481,13 @@ text-align: center;
 }
 
 .contact-container {
-  display: grid;
-  text-align: center;
+  display: flex;
   align-items: flex-start;
   padding: 0% 10%;
 }
 
 .contact-info {
-  width: 100%;
+  width: 30%;
 }
 
 .info-block {
@@ -572,16 +505,17 @@ text-align: center;
 .info-block p {
   font-size: 17px;
   line-height: 1.6;
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
 
 .separator {
-display: none;
+  width: 1px;
+  background-color: #bdbdbd;
+  margin: 0 40px;
+  height: 360px;
 }
 
 .contact-form {
-  width: 100%;
+  width: 40%;
 }
 
 .contact-form input,.contact-form textarea {
@@ -628,14 +562,16 @@ footer {
   background-color: rgb(128, 77, 0);
   color: antiquewhite;
   margin-bottom: 0.5%;
-  font-size: 0.5em;
-  padding: 3% 3%;
+  font-size: 0.7em;
+  padding: 1% 10%;
   height: auto;
 }
 
 .trait-footer {
-  width: 5em;
+  width: 100px;
   height: 0.5px;
   background-color: antiquewhite;
 }
+}
+
 

@@ -1,14 +1,19 @@
-// Name Nav
-const name = document.getElementById("name");
-const text = name.textContent;
-name.textContent = "";
+// Règle d’or à retenir (très important),TOUJOURS encapsuler les animations JS 
 
-[...text].forEach((letter, i) => {
-  const span = document.createElement("span");
-  span.textContent = letter === " " ? "\u00A0" : letter;
-  span.style.animationDelay = `${i * 0.20}s`;
-  name.appendChild(span);
-});
+// Name Nav
+(function () { 
+  const nameNav = document.getElementById("name");
+  if (!nameNav) return;
+  const text = nameNav.textContent;
+  nameNav.textContent = "";
+
+  [...text].forEach((letter, i) => {
+    const span = document.createElement("span");
+    span.textContent = letter === " " ? "\u00A0" : letter;
+    span.style.animationDelay = `${i * 0.20}s`;
+    nameNav.appendChild(span);
+  });
+})()
 
 // Projects figure 
 const counters = document.querySelectorAll(".counter");
@@ -68,7 +73,6 @@ const observer = new IntersectionObserver(
 
 observer.observe(wrapper);
 
-//
 const projectSection = document.querySelector('.reveal-project');
 
 const observerProject = new IntersectionObserver(
@@ -114,6 +118,55 @@ window.addEventListener("scroll", () => {
 
     content.style.transform = `translateY(-${scrollValue}px)`;
   });
+});
+
+/* =============== Animation Manuscript effect =============== */
+(function () {
+  const element = document.getElementById("typing");
+  if (!element) return;
+
+  const text = element.textContent;
+  element.textContent = "";
+
+  let hasStarted = false;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !hasStarted) {
+        hasStarted = true;
+        typeWriter();
+      }
+    });
+  }, { threshold: 0.4 });
+
+  observer.observe(element);
+
+  let index = 0;
+  const speed = 35;
+
+  function typeWriter() {
+    if (index < text.length) {
+      element.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+})();
+
+/* =============== Smooth Effect =============== */
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target); // Pour éviter de réanimer plusieurs fois
+            }
+        });
+    }, { threshold: 0.2 }); // Déclenche quand 20% de la section est visible
+
+    sections.forEach(section => observer.observe(section));
 });
 
 

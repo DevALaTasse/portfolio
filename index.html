@@ -7,8 +7,8 @@
   <title>Portfolio Devergnes.Christopher</title>
   <meta name="description" content="L'univers minimaliste du developpement web selon cosybyte" />
   <!-- Google code to request a site once it's online <meta name="google-site-verification" content="" /> -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <script src="javascript/main.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,16 +23,16 @@
       <h1 class="cormorant-garamond1" id="name">{{ Devergnes.Christopher }}</h1>
       <ul class="nav-menu">
         <li><a href="index.html" class="nav-a">Accueil</a></li>
-        <li><a href="about.html" class="nav-a">A propos</a></li>
+        <li><a href="#about-id" class="nav-a">A propos</a></li>
         <li><a href="#projets-id" class="nav-a">Projets</a></li>
-        <li><a href="contact.html" class="nav-a">Contact</a></li>
+        <li><a href="#contact-id" class="nav-a">Contact</a></li>
       </ul>
     </nav>
   </header>
 
 <!-- Home -->
   <main>
-    <div class="containeur-flexible">
+    <div class="img-container-flexible">
       <section class="element-flexible">
         <div class="align-font">
           <p class="cormorant-garamond">Bonjour <span class="welcome-point">.</span></p>
@@ -43,19 +43,16 @@
               <span>Developpeur Web </span>
               <strong class="rafter">/></strong>
             </span>
-            <pre class="comment raleway-regular">
+            <p class="comment raleway-regular">
 // Développeur web autodidacte, passionné par la création 
 et l’amélioration de sites web.
-            </pre>
-
+            </p>
           </h2><br>
-          <a href="#" class="nav-btn-1 font4-1">Vous avez un projet ?</a>
+          <a href="#contact-id" class="nav-btn-1 font4-1">Vous avez un projet ?</a>
           <a href="#skill" class="nav-btn-2 font4-1">Présentation</a>
         </div>
-      </section>
+                <img src="img/fern-10060081_1280.jpg" width="100px" alt="Image1">
 
-      <section class="element-flexible">
-        <img src="" alt="Image1">
       </section>
     </div>
 
@@ -97,16 +94,18 @@ et l’amélioration de sites web.
 
       <div class="element-flexible">
         <h2>Résultats mesurables</h2><br>
-        <p class="cormorant-garamond2">Chaque projet est une nouvelle opportunité pour apprendre & imaginer de nouveaux designs. Accompagnée, toujours, par le plaisir de coder.</p>
+        <p class="raleway-regular2">Chaque projet est une nouvelle opportunité pour apprendre & imaginer de nouveaux designs. Accompagnée, toujours, par le plaisir de coder.</p>
         <div class="figure-style">
           <div>
             <strong class="counter" data-target="3"></strong><span class="about-figures"> +</span><br><br>
             <p class="cormorant-garamond2">Projets réaliser</p>
           </div>
+          <span class="vertical-line"></span>
           <div>
             <strong class="counter" data-target="95"></strong><span class="about-figures"> %</span><br><br>
             <p class="cormorant-garamond2">Satisfaction</p>
           </div>
+          <span class="vertical-line"></span>
           <div>
             <strong class="counter" data-target="5"></strong><span class="about-figures"> +</span><br><br>
             <p class="cormorant-garamond2">Années d'experiences</p>
@@ -124,143 +123,141 @@ et l’amélioration de sites web.
     </section>
 
 <!-- Project 1 -->
-        <div class="containeur-flexible">
-  <section class="element-flexible">
-    <div class="computer-wrapper">
-      <div class="screen">
-        <div class="screen-content">
-          <img src="img/ngAuto.jpeg" alt="image-voiture">
-        </div>
-      </div>
-      <img src="img/mac_iphone.png" alt="mac-iphone" class="img-mac-iphone">
-    </div>
-  </section>
-          <section class="element-flexible element-flexible-project">
-          <div class="font-align-item">
-          <span class="horizontal-line"></span><span class="tangerine-bold">Negoce auto </span><span class="horizontal-line"></span>
-          <p>
-            <span class="cormorant-garamond4">
-              <p class="raleway-regular text-align-project">
-             <strong class="rafter"><</strong> Site web complet pour un garage automobile situé sur la commune de Malaunay.
-             Le site repose sur une base de données dynamique et intègre une interface 
-             d’administration permettant la gestion autonome des informations du garage,
-             du parc de véhicules et de leur mise à jour en temps réel. <strong class="rafter">/></strong>
-              </p>
-            </span>
-          </p>
+    <div class="containeur-flexible">
+      <section class="element-flexible">
+        <div class="computer-wrapper">
+          <div class="screen">
+            <div class="screen-content">
+              <img src="img/ngAuto.jpeg" alt="image-voiture">
+            </div>
           </div>
-          </section>
+          <img src="img/mac_iphone.png" alt="mac-iphone" class="img-mac-iphone">
         </div>
-<br><br>
+      </section>
+      <section class="element-flexible element-flexible-project">
+        <div class="font-align-item">
+          <span class="horizontal-line"></span><span class="tangerine-bold">Negoce auto </span><span class="horizontal-line"></span>
+          <span class="cormorant-garamond4">
+            <p class="raleway-regular text-align-project">
+              <strong class="rafter"><</strong> Site web complet pour un garage automobile situé sur la commune de Malaunay.
+              Le site repose sur une base de données dynamique et intègre une interface 
+              d’administration permettant la gestion autonome des informations du garage,
+              du parc de véhicules et de leur mise à jour en temps réel. <strong class="rafter">/></strong>
+            </p>
+          </span>
+          <br>
+          <a href="https://negoce-auto-malaunay.com/" target="_blank" rel="noopener">https://negoce-auto-malaunay.com/</a>
+        </div>
+      </section>
+    </div>
+    <br><br>
 
 <!-- Project 2 -->
-<div class="containeur-flexible">
-  <section class="element-flexible element-flexible-project">
-    <div class="font-align-item">
-      <span class="horizontal-line"></span>
-      <span class="tangerine-bold">Uriel Photographe</span>
-      <span class="horizontal-line"></span>
-
-      <p class="raleway-regular text-align-project">
-        <strong class="rafter"><</strong>
-        Site web moderne et épuré réalisé pour un photographe spécialisé en paysage, portrait et photographie sportive...
-        <strong class="rafter">/></strong>
-      </p>
-    </div>
-  </section>
-
-  <section class="element-flexible">
-    <div class="computer-wrapper">
-      <div class="screen">
-        <div class="screen-content">
-          <img src="img/uriel.jpg" alt="image-portrait">
+    <div class="containeur-flexible">
+      <section class="element-flexible element-flexible-project">
+        <div class="font-align-item">
+          <span class="horizontal-line"></span>
+          <span class="tangerine-bold">Uriel Photographe</span>
+          <span class="horizontal-line"></span>
+          <p class="raleway-regular text-align-project">
+            <strong class="rafter"><</strong>
+            Site web moderne et épuré réalisé pour un photographe spécialisé en paysage, portrait et photographie sportive...
+            <strong class="rafter">/></strong>
+          </p>
+          <br>
+          <a href="https://urielphotographe.fr/" target="_blank" rel="noopener">https://urielphotographe.fr/</a>
         </div>
-      </div>
-      <img src="img/mac_iphone.png" alt="mac-iphone" class="img-mac-iphone">
-    </div>
-  </section>
+      </section>
 
-</div>
+      <section class="element-flexible">
+        <div class="computer-wrapper">
+          <div class="screen">
+            <div class="screen-content">
+              <img src="img/uriel.jpg" alt="image-portrait">
+            </div>
+          </div>
+          <img src="img/mac_iphone.png" alt="mac-iphone" class="img-mac-iphone">
+        </div>
+      </section>
+    </div>
 
 <br><br>
 
 <!-- Project 3 -->
-        <div class="containeur-flexible">
-  <section class="element-flexible">
-    <div class="computer-wrapper">
-      <div class="screen">
-        <div class="screen-content">
-          <img src="img/uriel.jpg" alt="image-portrait">
+    <div class="containeur-flexible">
+      <section class="element-flexible">
+        <div class="computer-wrapper">
+          <div class="screen">
+            <div class="screen-content">
+              <img src="img/uriel.jpg" alt="image-portrait">
+            </div>
+          </div>
+          <img src="img/mac_iphone.png" alt="mac-iphone" class="img-mac-iphone">
         </div>
-      </div>
-      <img src="img/mac_iphone.png" alt="mac-iphone" class="img-mac-iphone">
-    </div>
-  </section>
-          <section class="element-flexible element-flexible-project">
-            <div class="font-align-item">
+      </section>
+      <section class="element-flexible element-flexible-project">
+        <div class="font-align-item">
           <span class="horizontal-line"></span><span class="tangerine-bold">Portfolio </span><span class="horizontal-line"></span>
-          <p>
-            <span class="cormorant-garamond4">
-              <p class="raleway-regular text-align-project">
-             <strong class="rafter"><</strong> Ce site web est celui que vous visitez actuellement. Il s’agit de mon portfolio personnel, conçu pour présenter mon travail. J’ai volontairement choisi de m’éloigner des portfolios de développeurs traditionnels afin de proposer un design qui me ressemble vraiment. Une attention particulière a donc été portée à l’aspect visuel et à l’expérience utilisateur. L’ensemble du code est disponible sur GitHub si vous souhaitez le consulter ou vous en inspirer. <strong class="rafter">/></strong>
+          <span class="cormorant-garamond4">
+            <p class="raleway-regular text-align-project">
+              <strong class="rafter"><</strong> Ce site web est celui que vous visitez actuellement. Il s’agit de mon portfolio personnel, conçu pour présenter mon travail. J’ai volontairement choisi de m’éloigner des portfolios de développeurs traditionnels afin de proposer un design qui me ressemble vraiment. Une attention particulière a donc été portée à l’aspect visuel et à l’expérience utilisateur. L’ensemble du code est disponible sur GitHub si vous souhaitez le consulter ou vous en inspirer. <strong class="rafter">/></strong>
             </p>
-            </span>
-          </p>
+          </span>
+          <br>
+          <a href="https://urielphotographe.fr/" target="_blank" rel="noopener">https://urielphotographe.fr/</a>
       </section>
     </div>
+  
+  <!-- About -->
+  <section class="section-project">
+    <h2 class="h3-project" id="about-id">A propos</h2>
+    <img src="img/plume.png" width="250px" alt="image-plume-ecriture">
+  </section>
 
-      <section class="section-project">
-      <h2 class="h3-project">A propos</h2>
-      <img src="img/plume.png" width="250px" alt="image-plume-ecriture">
-    </section>
+  <section class="wrapper-manuscript">
+      <div class="manuscrip-characteristict hidden raleway-regular" id="typing">
+      Hello world !!!
+      Je m'appelle Christopher, j'ai 32ans. Mes principaux centres d'intérêts, en dehors de mon travail, sont le développement web & l'apprentissage de nouvelles technologies. Ayant réalisé les projets qui me tenaient à coeur, j'ai maintenant le temps de travailler sur de nouveaux objectif : passer le diplôme de Développeur Web & Web Mobile en candidat libre, afin d'intégrer par la suite une entreprise dans le domaine du développement web.
+      </div>
+  </section>
 
-  </main>
-
-<!-- About -->
-<section></section>
-
-<!-- Contact -->
-<section class="contact-section">
-    <h1 class="contact-title">
-        Contactez-moi via le formulaire ci-dessous <br> & je vous répondrais dès que possible.
-    </h1>
+  <!-- Contact -->
+  <section class="contact-section" id="contact-id">
+    <h2 class="contact-title">Contactez-moi via le formulaire ci-dessous <br> & je vous répondrais dès que possible.</h2>
     <div class="contact-container">
-        <div class="contact-info">
-            <div class="info-block">
-                <span class="label">EMAIL</span>
-                <p>christopher.devergnes@gmail.com</p>
-            </div>
-
-            <div class="info-block">
-                <span class="label">TÉLÉPHONE</span>
-                <p>07 82 78 88 24</p>
-            </div>
-
-            <div class="info-block">
-                <span class="label">ADRESSE</span>
-                <p>
-                    La fleuriere<br>
-                    Saint-Evroult-de-Montfort<br>
-                    61230
-                </p>
-            </div>
+      <div class="contact-info">
+        <div class="info-block">
+          <span class="label">EMAIL</span>
+          <p>christopher.devergnes@gmail.com</p>
         </div>
 
-        <!-- Séparateur -->
-        <div class="separator"></div>
+        <div class="info-block">
+          <span class="label">TÉLÉPHONE</span>
+           <p>07 82 78 88 24</p>
+        </div>
 
-        <!-- Formulaire -->
-        <form class="contact-form" action="contact.php" method="post">
-            <input type="text" name="name" placeholder="Nom" required>
-            <input type="tel" name="phone" placeholder="Telephone">
-            <input type="email" name="email" placeholder="Mail" required>
-            <textarea name="message" placeholder="Message" required></textarea>
-            <button type="submit">envoyer</button>
-        </form>
+        <div class="info-block">
+          <span class="label">ADRESSE</span>
+          <p>La fleuriere<br>Saint-Evroult-de-Montfort<br>61230</p>
+        </div>
+      </div>
+
+  <!-- Séparateur -->
+  <div class="separator"></div>
+
+    <!-- Formulaire -->
+      <form class="contact-form" action="contact.php" method="POST">
+          <input type="text" name="name" placeholder="Nom" required>
+          <input type="tel" name="phone" placeholder="Telephone">
+          <input type="email" name="email" placeholder="Mail" required>
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit">envoyer</button>
+      </form>
     </div>
-</section>
+  </section>
+</main>
 
-<!-- Footer -->
+  <!-- Footer -->
   <footer class="cormorant-garamond-footer">
     <div>
       <span>Step by step</span><br><br>
@@ -269,7 +266,7 @@ et l’amélioration de sites web.
     </div>
     <div>
       <img src="img/github-icon.png" width="100px" alt="icon-github"><br>
-      <a href="https://github.com/DevALaTasse">Découvrez l'envers du décort <br>
+      <a href="https://github.com/DevALaTasse" target="_blank" rel="noopener">Découvrez l'envers du décort <br>
          grace au code source des <br> mes projets ici</a>
     </div>
     <div>
