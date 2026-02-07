@@ -1,3 +1,4 @@
+/* Mobile */
 /* =============== Font =============== */
 .raleway-regular {
   font-family: "Raleway", sans-serif;
@@ -74,7 +75,6 @@
   letter-spacing: 1px;
 }
 
-
 /* =============== Body =============== */
 body {
   background-color: #f2f2f2;
@@ -111,13 +111,13 @@ section.show {
 }
 
 .nav-container {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0% 8% 0% 8%;
   height: 3em;
-  display: grid;
-  justify-content: center;
   color: antiquewhite;
   background-color: rgb(128, 77, 0);
-  align-content: center;
 }
 
 .nav-menu {
@@ -142,15 +142,12 @@ a {
   word-break: break-word;
 }
 
-.ghost {
-  display: none;
-}
-
 .img-container-flexible {
-  background-image: url("../img/fern-10060081_1280.jpg");
-  background-size: cover;      /* couvre toute la div */
-  background-position: center; /* centrée */
-  background-repeat: no-repeat;
+/*  background-image: url("../img/fern-10060081_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  background-color: #d9af0945;
   padding: 0% 8%;
 }
 
@@ -209,6 +206,7 @@ a {
 .comment {
   color: rgb(128, 77, 0);
   font-size: 0.4em;
+  padding: 0% 10% 0% 0%;
 }
 
 .nav-btn-1 {
@@ -229,6 +227,25 @@ a {
 
 .nav-btn-2 {
 display: none;
+}
+
+.displayHome1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.displayHome2 {
+  grid-column-start: 1;
+}
+
+.displayHome3 {
+  grid-column-start: 2;
+  background-image: url(../img/ChristopherDevergnes.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 40%;
+  width: 300px;
 }
 
 /* =============== Skill section =============== */
@@ -274,15 +291,15 @@ display: none;
   opacity: 0;
   clip-path: inset(0 50% 0 50%);
   transition: clip-path 3.5s ease, opacity 3s ease;
-
 }
+
 .wrapper.active .none {
-    opacity: 1;
-    clip-path: inset(0 0 0 0);
-    display: grid;
-    height: 10em;
-    font-size: small;
-    justify-items: center;
+  opacity: 1;
+  clip-path: inset(0 0 0 0);
+  display: grid;
+  height: 10em;
+  font-size: small;
+  justify-items: center;
 }
 /* ------- end lotus -------*/
 
@@ -324,15 +341,15 @@ h2, p {
 }
 
 .figure-style {
-display: flex;
-justify-content: space-evenly;
-text-align: center;
-padding: 5% 0%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 5% 0%;
 }
 
 /* =============== Projects section ============== */
 .section-project {
-text-align: center;
+  text-align: center;
 }
 
 .lune {
@@ -499,6 +516,7 @@ text-align: center;
   width: 100%;
   height: auto;
 }
+
 /* =============== About =============== */
 .wrapper-manuscript {
   display: grid;
@@ -536,9 +554,9 @@ text-align: center;
 
 /* =============== Form =============== */
 .contact-section {
-  max-width: 1100px;
-  margin: 80px auto;
-  padding: 0 20px;
+  margin-bottom: 30px;
+  padding: 20px 20px;
+  background-color: #d9af0945;
 }
 
 .contact-title {
@@ -586,11 +604,16 @@ display: none;
 
 .contact-form input,.contact-form textarea {
   width: 100%;
-  border: 1px solid #bdbdbd;
-  background: transparent;
+  border: 1px solid rgb(128, 77, 0);
+  border-radius: 20px;
+  background: rgb(250, 245, 225);
   padding: 14px;
   margin-bottom: 20px;
   font-size: 14px;
+  /*font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;*/
   letter-spacing: 1px;
 }
 

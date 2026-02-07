@@ -1,4 +1,4 @@
-// Règle d’or à retenir (très important),TOUJOURS encapsuler les animations JS 
+// Golden rule to remember (very important): ALWAYS encapsulate JS animations 
 
 // Name Nav
 (function () { 
@@ -161,10 +161,10 @@ document.addEventListener("DOMContentLoaded", () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("show");
-                observer.unobserve(entry.target); // Pour éviter de réanimer plusieurs fois
+                observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.2 }); // Déclenche quand 20% de la section est visible
+    }, { threshold: 0.2 }); 
 
     sections.forEach(section => observer.observe(section));
 });
