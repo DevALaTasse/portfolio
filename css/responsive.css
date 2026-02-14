@@ -12,13 +12,91 @@
   left: 90%;
   transform: translate(-100, -50%);
   }
+
+.displayHome2 {
+  grid-column-start: 1;
+  color: rgb(59 28 0);
+  }
+}
+
+/* =============== img background =============== */
+@media (max-width: 830px) {
+body {
+  font-size: 13px;
+}
+
+.nav-btn-1 {
+  padding: 5px 1px;
+  width: 60%;
+}
+
+.info-block p {
+  font-size: 13px;
+}
+
+.h3-project {
+  margin: 5% 0% -5%;
+}
+
+.raleway-regular2 {
+  font-size: small;
+}
+
+.noMargin {
+  margin: 0%;
+  font-size: 15px;
+}
+
+h2, p {
+  margin-block: 8%;
+}
+
+.imgPlume{
+  width: 100px;
+}
+
+.contact-form input,.contact-form textarea {
+  width: 80%;
+  font-size: 10px;
+}
+
+.contact-form button {
+  font-size: 9px;
+}
+
+.displayHome2 {
+  grid-column-start: 1;
+  color: rgb(59 28 0);
+}
+
+.displayHome2 {
+  grid-column-start: 1;
+  color: rgb(59 28 0);
+}
+
+.img-container-flexible {
+  background-image: url("../img/finalPortrait2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0% 8%;
+  }
+}
+
+@media (max-width: 634px) {
+.img-container-flexible {
+  background-image: url("../img/finalPortrait3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0% 8%;
+}
 }
 
 /* =============== Laptop =============== */
 @media (min-width: 1024px) {
 
 /* =============== Nav/Header section =============== */
-
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -39,15 +117,15 @@
   display: inline-block;
   padding: 10px 22px;
   background-color: transparent;
-  border: 2px solid rgb(128, 77, 0);
-  color:  rgb(128, 77, 0);
+  border: 2px solid #d5b071;
+  color:  #d5b071;
   text-decoration: none;
   transition: background-color 0.7s ease;
 }
 
 .nav-btn-2:hover {
-  background-color: rgb(128, 77, 0);
-  border: 2px solid rgb(128, 77, 0);
+  background-color: rgb(95, 65, 39);
+  border: 2px solid rgb(95, 65, 39);
   color: white;
 }
 
@@ -103,5 +181,6 @@ footer {
   width: 100px;
   }
 }
+
 
 
